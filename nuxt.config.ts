@@ -8,10 +8,11 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/i18n',
+    '@nuxt/icon',
     '@nuxt/fonts',
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
   ],
 
   i18n: {
