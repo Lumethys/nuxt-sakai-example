@@ -7,7 +7,12 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxt/fonts',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode'
+  ],
 
   i18n: {
     // locales: [
@@ -26,5 +31,17 @@ export default defineNuxtConfig({
     ],
     lazy: true,
     defaultLocale: 'en',
-  }
+  },
+
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    storageKey: 'nuxt-color-mode'
+  },
 })
