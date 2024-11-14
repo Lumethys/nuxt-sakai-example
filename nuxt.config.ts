@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@primevue/nuxt-module',
   ],
 
   i18n: {
@@ -45,4 +46,20 @@ export default defineNuxtConfig({
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
     storageKey: 'nuxt-color-mode'
   },
+
+  css: ['assets/styles/tailwind.css', 'assets/styles/base.css'],
+
+  primevue: {
+    options: {
+      theme: 'none'
+    }
+  },
+
+  postcss: {
+    plugins: {
+      'postcss-import': {},
+      tailwindcss: {},
+      autoprefixer: {}
+    }
+  }
 })
