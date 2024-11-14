@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxt/fonts'],
+  modules: ['@nuxtjs/i18n', '@nuxt/fonts', '@nuxtjs/tailwindcss'],
 
   i18n: {
     // locales: [
