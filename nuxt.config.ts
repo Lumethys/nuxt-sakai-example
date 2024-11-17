@@ -10,10 +10,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/icon',
     '@nuxt/fonts',
+    '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@primevue/nuxt-module',
+    '@pinia/nuxt'
   ],
 
   i18n: {
@@ -52,6 +54,9 @@ export default defineNuxtConfig({
   primevue: {
     options: {
       theme: 'none'
+    },
+    components: {
+      prefix: 'Prime'
     }
   },
 

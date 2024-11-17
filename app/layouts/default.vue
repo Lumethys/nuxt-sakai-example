@@ -3,8 +3,8 @@
 
 <template>
   <div>
-    <AdminTopBar/>
-<!--    <AdminSideBar/>-->
+    <LayoutTopBar/>
+<!--    <LayoutSideBar/>-->
     <slot/>
   </div>
 </template>
