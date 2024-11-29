@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
+    '@hebilicious/vue-query-nuxt',
   ],
 
   i18n: {
