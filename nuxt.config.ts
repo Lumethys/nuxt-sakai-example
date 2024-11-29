@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/icon',
     '@nuxt/fonts',
+    '@nuxt/image',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
@@ -44,5 +45,9 @@ export default defineNuxtConfig({
     classSuffix: '-mode',
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
     storageKey: 'nuxt-color-mode'
+  },
+
+  image: {
+    // domains: ['nuxtjs.org']
   },
 })
