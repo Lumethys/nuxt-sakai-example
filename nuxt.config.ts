@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode'
   },
 
-  image: {
-    // domains: ['nuxtjs.org']
-  },
+  // image: {
+  //   domains: ['nuxtjs.org']
+  // },
 })
